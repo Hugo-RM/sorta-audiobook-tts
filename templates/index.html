@@ -1,0 +1,33 @@
+<!-- The initial index page that allows the user to either use the microphone or type the topic. -->
+
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <!-- Loads all the primary information to be used by the header -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Proj Main Page Index</title>
+      {{ bootstrap.load_css() }}
+      <style>
+        input {
+            width: 60%;
+        }
+      </style>
+  </head>
+  <body class="container text-center mt-5">
+      <h1> Text to Speech </h1>
+
+      <!-- A post form to take the user to the wikipage based on the information written. -->
+      <form method="POST" action="/">
+        <div class="container text-center mt-5">
+          <div>
+            <input type="text" name="topic" placeholder="Enter File Name!" maxlength="200" required>
+          <br><br>
+            <textarea name="content" placeholder="Paste your paragraphs here!" rows="15" class="form-control"></textarea>
+          </div> <br>
+          <button type="submit"> Submit </button>
+        </div>
+      </form>
+      <br>
+  </body>
+</html>
