@@ -33,16 +33,4 @@ def convertText(title, myText):
     else:
         print("ERROR: Audio file was not created!")
 
-if __name__ == '__main__':
-    file_path = 'I Am Not Your Perfect Mexican Daughter Full Book.txt'  # Replace with the actual path to your text file
-
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            string_file = file.read()
-        convertText('Audio Book I Am Not Your Perfect Mexican Daughter by Erika L. Sanchez', string_file)
-    except FileNotFoundError:
-        print(f"Error: The file '{file_path}' was not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
     
