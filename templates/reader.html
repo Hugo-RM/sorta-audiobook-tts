@@ -16,19 +16,15 @@
 </head>
 <body class="container text-center mt-5" style="background-color: bisque;">
     <h1 class="card-body bg-light text-dark rounded card shadow-lg p-3"> {{topic}} </h1>
-
     <div class="card shadow-lg p-3">
         <div class="card-body bg-light text-dark rounded">
             <div style="white-space: pre-line;">{{ content }}</div>
             <br>
-            
             <!-- An audio autoplay block that uses the topic to play the audio file created through the text-to-speech. -->
             <audio controls autoplay>
                 <source src="../static/{{topic}}.wav" type="audio/wav">
             </audio>
-            <!--  Too lazy to convert mp3 to wav  -->
         </div>
-
         <!-- A return button to take the user back to the index page. -->
         <div class="card-body bg-light text-dark rounded">
             <h4> Return to Home Page? </h4>
@@ -37,6 +33,5 @@
             </form>
         </div>
     </div>
-    
 </body>
 </html>
